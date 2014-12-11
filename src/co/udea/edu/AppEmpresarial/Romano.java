@@ -13,7 +13,7 @@ public class Romano {
     	
     	if(valor < 4000){  
         	int valMil,valCentena,valDecena,residuo;
-            String a1,b1,c1,d1;
+            //String a1,b1,c1,d1;
                      
             // Obtenemos el cada uno de los digitos del numero decimal
             
@@ -23,14 +23,11 @@ public class Romano {
             residuo = ((valor%1000)%100)%10;
             
             /*cada digito obtenido anteriormente indica la posicion del valor en Romano
-            que debemos tomar del respectivo Arreglo. Se guarda cada valor en
-            un String y luego se concatenan los mismos para retornar el resultado.*/
+            que debemos tomar del respectivo Arreglo. Se obtiene cada valor en y se 
+            concatenan en un string que es retornado por el metodo.*/
             
-            a1 = uMil[valMil];
-            b1 = centenas[valCentena];
-            c1 = decenas[valDecena];
-            d1 = unidades[residuo];
-            return a1+b1+c1+d1;
+            String valRomano = uMil[valMil] + centenas[valCentena] + decenas[valDecena] + unidades[residuo]; 
+            return valRomano;
     	}
     	else{ 
     		return "error"; 
