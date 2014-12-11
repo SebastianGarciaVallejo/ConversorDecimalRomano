@@ -13,7 +13,6 @@ public class Romano {
     	
     	if(valor < 4000){  
         	int valMil,valCentena,valDecena,residuo;
-            //String a1,b1,c1,d1;
                      
             // Obtenemos el cada uno de los digitos del numero decimal
             
